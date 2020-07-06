@@ -1,0 +1,28 @@
+export default class Library {
+  constructor () {
+    this.books = [];
+  }
+  
+
+
+bookCount() {
+  return this.books.length;
+};
+
+addBook(newBook) {
+  this.books.push(newBook);
+};
+
+addBooks(newBooks) {
+  newBooks.forEach(book => this.books.push(book));
+};
+
+printInventory() {
+  this.books.forEach((title, author) => {
+    console.log(`${title} by ${author}`);
+  });
+};
+  
+};
+
+
